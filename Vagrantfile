@@ -24,7 +24,7 @@ Vagrant.configure(2) do |config|
     c.vm.network "private_network", ip: "192.168.50.11"
 	c.vm.provider :virtualbox do |v|
 		v.name = "client1.test.local"
-		v.customize ["modifyvm", :id, "--cpus", 2, "--memory", "256"]
+		v.customize ["modifyvm", :id, "--cpus", 2, "--memory", "512"]
 
     end
 
